@@ -1,5 +1,6 @@
-﻿#include<stdio.h>
-#include<math.h>
+
+#include<stdio.h>
+#include<math.h>            // hello from Bodya
 #define n 5
 void bul(int array[n][n]);
 void suma(int array[n][n]);
