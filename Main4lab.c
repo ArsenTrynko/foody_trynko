@@ -1,5 +1,6 @@
-﻿#include<stdio.h>
-#include<math.h>
+
+#include<stdio.h>
+#include<math.h>            // hello from Bodya
 #define n 5
 void sorting(int array[n][n]);
 void find_suma(int array[n][n]);
