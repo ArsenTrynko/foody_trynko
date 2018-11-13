@@ -1,9 +1,9 @@
 ﻿#include<stdio.h>
 #include<math.h>
 #define n 5
-void bul(int array[n][n]);
-void suma(int array[n][n]);
-void s_geometrychne(int array[n][n]);
+void sorting(int array[n][n]);
+void find_suma(int array[n][n]);
+void seredne_geometrychne(int array[n][n]);
 
 main()
 {
@@ -37,8 +37,8 @@ main()
 		}
 		printf("\n");
 	}
-	suma(array);
-	s_geometrychne(array);
+	sorting(array);
+	seredne_geometrychne(array);
 	system("pause");
 
 }
@@ -46,7 +46,7 @@ main()
 
 
 
-void bul(int array[n][n])
+void sorting(int array[n][n])
 {
 	int i, k, j, c;
 	for (j = 0; j < 5; j++)
@@ -66,7 +66,7 @@ void bul(int array[n][n])
 	}
 }
 
-void suma(int array[n][n])
+void find_suma(int array[n][n])
 {
 	int i, j, suma;
 	for (i = 0; i < 5; i++)
@@ -83,8 +83,8 @@ void suma(int array[n][n])
 	}
 }
 
-void s_geometrychne(int array[n][n]) {
-	int i, j, s_g;
+void seredne_geometrychne(int array[n][n]) {
+	int i, j, seredne_geom;
 	s_g = 1.0;
 	for (i = 0; i < 5; i++)
 	{
@@ -92,14 +92,14 @@ void s_geometrychne(int array[n][n]) {
 		{
 			if (i < j)
 			{
-				s_g = s_g * array[i][j];
+				seredne_geom = seredne_geom * array[i][j];
 			}
 		}
 	}
 	if (s_g >= 0) {
-		printf("\n\n Seredne geom= %fl \t", pow(s_g*1.0, 0.2));
+		printf("\n\n Seredne geom= %fl \t", pow(seredne_geom*1.0, 0.2));
 	}
 	else {
-		printf("\n\n Seredne geom= %fl \t", (pow(fabs(s_g)*1.0, 0.2))*(-1));
+		printf("\n\n Seredne geom= %fl \t", (pow(fabs(seredne_geom)*1.0, 0.2))*(-1));
 	}
 }
